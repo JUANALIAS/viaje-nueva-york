@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_abee1a9076c58a68a1ada657b7e9675a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_abee1a9076c58a68a1ada657b7e9675a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_abee1a9076c58a68a1ada657b7e9675a = L.map(
+                "map_abee1a9076c58a68a1ada657b7e9675a",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a58a9389e46d07c90a7ad90f720fb7ee = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a58a9389e46d07c90a7ad90f720fb7ee.addTo(map_abee1a9076c58a68a1ada657b7e9675a);
+        
+    
+            var feature_group_c9bb9564edbf687ac1f620a779739241 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cd785d8dfa7f587cf3e9e6ce231148f5 = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(feature_group_c9bb9564edbf687ac1f620a779739241);
+        
+    
+            var icon_1e9b3a3dad13dab4b661995cd539f4a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa28d32147286f108d6fb122fb13ef0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e3a4ffebdefe05c0ebc6553724798db = $(`<div id="html_9e3a4ffebdefe05c0ebc6553724798db" style="width: 100.0%; height: 100.0%;">✈️ Lunes 18 de agosto – Llegada Vuelo: AY5653 desde Madrid a las 12:25 h Llegada estimada a JFK: alrededor de las 15:00 h (hora local) 🚕 Transporte al hotel Hotel: Riu Plaza Manhattan Times Square 📍 145 W 47th St, New York, NY 10036 Transporte: 🚕 Taxi desde JFK (2 taxis para 8 personas) 💰 Precio est...</div>`)[0];
+                popup_fa28d32147286f108d6fb122fb13ef0b.setContent(html_9e3a4ffebdefe05c0ebc6553724798db);
+            
+        
+
+        marker_cd785d8dfa7f587cf3e9e6ce231148f5.bindPopup(popup_fa28d32147286f108d6fb122fb13ef0b)
+        ;
+
+        
+    
+    
+                marker_cd785d8dfa7f587cf3e9e6ce231148f5.setIcon(icon_1e9b3a3dad13dab4b661995cd539f4a3);
+            
+    
+            feature_group_c9bb9564edbf687ac1f620a779739241.addTo(map_abee1a9076c58a68a1ada657b7e9675a);
+        
+    
+            var layer_control_4fd229cfe5d0b026e8a34c8239ed0b2b_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a58a9389e46d07c90a7ad90f720fb7ee,
+                },
+                overlays :  {
+                    "Day 1" : feature_group_c9bb9564edbf687ac1f620a779739241,
+                },
+            };
+            let layer_control_4fd229cfe5d0b026e8a34c8239ed0b2b = L.control.layers(
+                layer_control_4fd229cfe5d0b026e8a34c8239ed0b2b_layers.base_layers,
+                layer_control_4fd229cfe5d0b026e8a34c8239ed0b2b_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_abee1a9076c58a68a1ada657b7e9675a);
+
+        
+</script>
+</html>
